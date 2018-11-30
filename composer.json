@@ -1,0 +1,43 @@
+{
+    "name": "jyk2000/test",
+    "description": ":description",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Yong K. Jun",
+            "email": "jyk2000@gmail.com",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/jyk2000/test",
+    "keywords": ["Laravel", "Test"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "jyk2000\\Test\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "jyk2000\\Test\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "jyk2000\\Test\\TestServiceProvider"
+            ],
+            "aliases": {
+                "Test": "jyk2000\\Test\\Facades\\Test"
+            }
+        }
+    }
+}
