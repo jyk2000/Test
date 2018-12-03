@@ -33,10 +33,12 @@
     "extra": {
         "laravel": {
             "providers": [
-                "jyk2000\\Test\\TestServiceProvider"
+                "jyk2000\\Test\\TestServiceProvider",
+                "jyk2000\\Test\\BlockServiceProvider"
             ],
             "aliases": {
-                "Test": "jyk2000\\Test\\Facades\\Test"
+                "Test": "jyk2000\\Test\\Facades\\Test",
+                "Block": "jyk2000\\Test\\Facades\\Block"
             }
         }
     }
